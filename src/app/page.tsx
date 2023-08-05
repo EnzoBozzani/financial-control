@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import styles from './page.module.scss';
 
-const Home: NextPage = () => {
+const Home: NextPage = async () => {
   return (
     <section className={styles.wrapper}>
       <p className={styles.title}>Manage your money</p>
