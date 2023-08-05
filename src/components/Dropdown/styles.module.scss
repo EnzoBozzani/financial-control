@@ -1,0 +1,43 @@
+@import '@/styles/variables.scss';
+
+.wrapper {
+    background-color: $c3;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: fit-content;
+
+    .btn {
+        background-color: $c2;
+        border-radius: 10px;
+        border: 2px solid $c3;
+        padding: .2rem 3rem;
+        color: $c3;
+        width: 100%;
+        &:hover {
+            background-color: $c2;
+            border-color: $c2;
+            color: $c3;
+        }
+    }
+
+    .menu, .item {
+        background-color: $c2;
+        &:hover {
+            background-color: $c2;
+        }
+    }
+
+    .menu {
+        .item {
+            width: 100%;
+            display: grid;
+            place-items: center;
+
+            a {
+                text-decoration: none;
+                color: $c3;
+            }
+        }
+    }
+}

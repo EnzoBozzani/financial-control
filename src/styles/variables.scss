@@ -1,0 +1,10 @@
+//https://coolors.co/palette/333333-48e5c2-fcfaf9
+$c1: #fcfaf9;
+$c2: #00ff77;
+$c3: #222222;
+
+@mixin flex($jc, $ai){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}

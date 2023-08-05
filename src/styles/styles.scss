@@ -1,0 +1,26 @@
+@import './variables.scss';
+@import 'bootstrap/scss/bootstrap';
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body, html {
+    background-color: $c3;
+}
+
+#root {
+    min-height: 100vh;
+    @include flex(start, start);
+    flex-direction: column;
+}
+
+.dark-bg {
+    background-color: $c3;
+    color: $c1;
+}

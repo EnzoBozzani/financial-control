@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+
+.wrapper {
+    margin-bottom: 5rem;
+}
+
+.wrapper2 {
+    width: 100%;
+    padding: 1rem;
+    background-color: $c3;
+
+    nav {
+        width: 100%;
+        @include flex(center, center);
+        gap: 2rem;
+
+        a {
+            color: $c1;
+            font-size: 1.2rem;
+            transition: .5s;
+            text-decoration: none;
+
+            &:hover {
+                color: $c2;
+            }
+        }
+    }
+}

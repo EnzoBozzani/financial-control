@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+
+.wrapper {
+    width: 100%;
+    @include flex(center, center);
+    flex-direction: column;
+
+    header {
+        @include flex(center, center);
+        width: 100%;
+        p {
+            font-size: 2rem;
+            color: $c2;
+        }
+    }
+    margin-bottom: 10rem;
+}
