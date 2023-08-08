@@ -1,11 +1,10 @@
 'use client';
 
 import { ReactNode, createContext, useContext, useEffect, useState } from "react";
-import { TransactionContextType } from '../types/TransactionContextType';
 import { TransactionType } from "@/types/TransactionType";
 
 
-const TransactionContext = createContext<TransactionContextType>({} as TransactionContextType);
+const TransactionContext = createContext<TransactionType[]>([]);
 
 export const TransactionContextProvider = ({ children, storedTransactions } : { children: ReactNode, storedTransactions: TransactionType[]}) => {
     const [ transactions, setTransactions ] = useState<TransactionType[]>([]);
@@ -17,7 +16,7 @@ export const TransactionContextProvider = ({ children, storedTransactions } : { 
     });
 
     return (
-        <TransactionContext.Provider value={{ transactions }}>
+        <TransactionContext.Provider value={transactions}>
             {children}
         </TransactionContext.Provider>
     )
